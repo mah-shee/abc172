@@ -1,0 +1,12 @@
+[package]
+name = "abc172"
+version = "0.1.0"
+authors = ["masatoshi"]
+edition = "2018"
+
+# dependencies added to new project
+[dependencies]
+proconio = { version = "=0.3.4", features = ["derive"] }
+[profile.release]
+lto = true
+panic = 'abort'
